@@ -184,7 +184,7 @@ An interactive Microsoft Power BI dashboard was created to visualize student per
 
 ### Power BI Dashboard Preview
 
-![Power BI Dashboard](screenshots/PB_Dashboard.JPG)
+![Power BI Dashboard](screenshots/PB_Dashbaord.JPG)
 
 ---
 
@@ -299,7 +299,7 @@ Interactive Dashboard
 
 ### Power BI Dashboard
 
-![Power BI Dashboard](screenshots/PB_Dashboard.JPG)
+![Power BI Dashboard](screenshots/PB_Dashbaord.JPG)
 
 ---
 
