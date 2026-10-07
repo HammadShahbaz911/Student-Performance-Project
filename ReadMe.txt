@@ -33,14 +33,14 @@ student-performance-project/
 │   └── Student_Performance_Dashboard.pbix
 │
 ├── screenshots/
-│   ├── boxplot.png
-│   ├── heatmap.png
-│   ├── histogram.png
-│   └── powerbi_dashboard.png
+│   ├── BOXplot(outlier).JPG
+│   ├── Heatmap.JPG
+│   ├── Histogram.JPG
+│   └── PB_Dashboard.JPG
 │
 ├── README.md
 └── requirements.txt
-
+...
 ## Dataset
 
 The dataset contains information related to student academic performance.
@@ -111,6 +111,7 @@ Linear Regression
 Prediction
    ↓
 Model Evaluation
+...
 
 ## Machine Learning Steps
 The following steps were completed:
@@ -148,17 +149,17 @@ Dashboard Includes
 ![Power BI Dashboard](screenshots/PB_Dashboard.JPG)
 
 Technologies Used
-- 🐍 Python
-- 🐼 Pandas
-- 🔢 NumPy
-- 📊 Matplotlib
-- 🎨 Seaborn
-- 🤖 Scikit-learn
-- 📈 Microsoft Power BI
-- 🐙 GitHub
-▶️ How to Run
+-  Python
+-  Pandas
+-  NumPy
+-  Matplotlib
+-  Seaborn
+-  Scikit-learn
+-  Microsoft Power BI
+-  GitHub
+## How to Run
 1. Clone the Repository
-git clone https://github.com/hammeshkh5446-sudo/student-performance-project.git
+git clone https://github.com/HammadShahbaz911/student-performance-project.git
 
 2. Navigate to the Project Directory
 cd student-performance-project
