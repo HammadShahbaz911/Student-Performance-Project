@@ -1,160 +1,231 @@
-# Student Performance Project
+#  Student Performance Prediction & Analysis
 
-## 📌 Project Overview
+##  Project Overview
 
-This project demonstrates a complete beginner-friendly Data Science workflow using a student performance dataset.
+This project demonstrates a complete beginner-friendly **Data Science and Machine Learning workflow** using a student performance dataset.
 
-The project includes:
+The project focuses on analyzing student performance, identifying relationships between different features, visualizing the data, building a machine learning model, and creating an interactive Power BI dashboard.
 
-* Data Analysis (EDA) using Python
-* Machine Learning using Linear Regression
-* Interactive Dashboard using Power BI
-* Project documentation and GitHub portfolio setup
+### The project includes:
+
+-  Exploratory Data Analysis (EDA)
+-  Data Visualization
+-  Correlation and Outlier Analysis
+-  Machine Learning using Linear Regression
+-  Model Evaluation
+-  Interactive Power BI Dashboard
+-  GitHub Project Organization
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 student-performance-project/
-│── data/
+│
+├── data/
 │   └── PB_data.csv
 │
-│── notebooks/
+├── notebooks/
 │   └── analysis.py
 │
-│── powerbi/
+├── powerbi/
 │   └── Student_Performance_Dashboard.pbix
 │
-│── screenshots/
-│   └── dashboard.png
+├── screenshots/
+│   ├── boxplot.png
+│   ├── heatmap.png
+│   ├── histogram.png
+│   └── powerbi_dashboard.png
 │
-│── README.md
-│── requirements.txt
-```
+├── README.md
+└── requirements.txt
 
----
+## Dataset
 
-## 📊 Dataset Features
+The dataset contains information related to student academic performance.
+Dataset Features
+Feature	Description
+Hours	Number of study hours
+Attendance	Student attendance percentage
+PreviousMarks	Previous examination marks
+Assignments	Assignment completion score
+Marks	Final examination marks
 
-| Feature       | Description                 |
-| ------------- | --------------------------- |
-| Hours         | Study hours                 |
-| Attendance    | Attendance percentage       |
-| PreviousMarks | Previous exam marks         |
-| Assignments   | Assignment completion score |
-| Marks         | Final marks (target)        |
 
----
+The target variable for the machine learning model is Marks.
 
-## 🔍 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
-Performed using Python libraries:
+Exploratory Data Analysis was performed using Python libraries such as:
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+EDA Steps
+The following analysis was performed:
+- Data loading and inspection
+- Checking dataset shape
+- Checking data types
+- Missing value analysis
+- Statistical summary
+- Distribution analysis
+- Correlation analysis
+- Heatmap visualization
+- Outlier detection using IQR
+- Boxplot analysis
+- Histogram visualization
 
-* pandas
-* matplotlib
-* seaborn
+## Data Visualizations
 
-Steps completed:
+## Correlation Heatmap
+The correlation heatmap was used to understand the relationships between numerical features in the dataset.
+![Heatmap](screenshots/Heatmap.JPG)
 
-* Data loading
-* Missing value check
-* Summary statistics
-* Histograms
-* Correlation matrix
-* Heatmap
-* Outlier detection using IQR and boxplot
+## Boxplot — Outlier Analysis
+Boxplots were used to analyze the distribution of the data and identify potential outliers.
+![Boxplot](screenshots/BOXplot(outlier).JPG)
 
----
+## Histogram
+Histograms were used to understand the distribution of different features in the student performance dataset.
+![Histogram](screenshots/Histogram.JPG)
 
-## 🤖 Machine Learning
+## Machine Learning
+## Model Used
+Linear Regression
+Linear Regression was used to predict students' final marks based on the available features.
+Machine Learning Workflow
 
-Model used:
+Dataset
+   ↓
+Data Cleaning
+   ↓
+Exploratory Data Analysis
+   ↓
+Feature Selection
+   ↓
+Train/Test Split
+   ↓
+Linear Regression
+   ↓
+Prediction
+   ↓
+Model Evaluation
 
-* Linear Regression
+## Machine Learning Steps
+The following steps were completed:
+- Train/Test Split
+- Model Training
+- Prediction
+- R² Score
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- Cross Validation
+- New Student Prediction
 
-Steps completed:
+## Model Results
+The Linear Regression model achieved the following results:
+Metric	Result
+R² Score	~0.9996
+RMSE	~0.44
+Cross Validation Average	~0.9948
 
-* Train/Test Split
-* Model Training
-* Prediction
-* R² Score
-* MAE
-* RMSE
-* Cross Validation
-* New student prediction
+These results indicate that the model performed very well on this dataset.
+Note: Very high performance can sometimes indicate that the dataset has a strong linear relationship between the features and target variable. In real-world datasets, model performance should also be validated on unseen external data.
 
-### Results
+## Power BI Dashboard
+An interactive Microsoft Power BI dashboard was created to visualize student performance and provide an easy-to-understand overview of the dataset.
+Dashboard Includes
+-  Average Marks Card
+-  Bar Chart
+-  Line Chart
+-  Pie Chart
+-  Interactive Slicers
+-  Student Performance Table
+-  Performance Analysis
 
-* R² Score: ~0.9996
-* RMSE: ~0.44
-* Cross Validation Average: ~0.9948
+## Power BI Dashboard Preview
+![Power BI Dashboard](screenshots/PB_Dashboard.JPG)
 
----
+Technologies Used
+- 🐍 Python
+- 🐼 Pandas
+- 🔢 NumPy
+- 📊 Matplotlib
+- 🎨 Seaborn
+- 🤖 Scikit-learn
+- 📈 Microsoft Power BI
+- 🐙 GitHub
+▶️ How to Run
+1. Clone the Repository
+git clone https://github.com/hammeshkh5446-sudo/student-performance-project.git
 
-## 📈 Power BI Dashboard
+2. Navigate to the Project Directory
+cd student-performance-project
 
-Dashboard includes:
-
-* Bar Chart
-* Line Chart
-* Pie Chart
-* Card (Average Marks)
-* Two Slicers
-* Table Visual
-
----
-
-## 🚀 Technologies Used
-
-* Python
-* pandas
-* matplotlib
-* seaborn
-* scikit-learn
-* Microsoft Power BI
-* GitHub
-
----
-
-## ▶️ How to Run
-
-1. Install dependencies:
-
-```bash
+3. Install Required Libraries
 pip install -r requirements.txt
-```
 
-2. Run analysis:
-
-```bash
+4. Run the Analysis
 python notebooks/analysis.py
-```
 
-3. Open the Power BI dashboard:
-
-```text
+5. Open the Power BI Dashboard
+Open the following file using Microsoft Power BI Desktop:
 powerbi/Student_Performance_Dashboard.pbix
-```
 
----
+## Learning Outcomes
+Through this project, I gained practical experience in:
 
-## 📷 Dashboard Preview
+- Data loading and exploration
+- Data cleaning and preprocessing
+- Exploratory Data Analysis
+- Data visualization
+- Correlation analysis
+- Outlier detection
+- Linear Regression
+- Machine Learning fundamentals
+- Model evaluation
+- Cross-validation
+- Making predictions
+- Power BI dashboard development
+- GitHub project organization
 
-Add your dashboard screenshot to the `screenshots/` folder and display it here after uploading to GitHub.
+## Project Highlights
+Python + Pandas
+      ↓
+Data Analysis & Cleaning
+      ↓
+Matplotlib + Seaborn
+      ↓
+Data Visualization
+      ↓
+Scikit-learn
+      ↓
+Machine Learning
+      ↓
+Linear Regression
+      ↓
+Model Evaluation
+      ↓
+Power BI
+      ↓
+Interactive Dashboard
 
----
+## Project Screenshots
 
-## 🎯 Learning Outcomes
+## Heatmap
+![Heatmap](screenshots/Heatmap.JPG)
 
-By completing this project, I learned:
+## Boxplot
+![Boxplot](screenshots/BOXplot(outlier).JPG)
 
-* Data cleaning and analysis
-* Visualization techniques
-* Machine learning fundamentals
-* Model evaluation
-* Dashboard creation in Power BI
-* GitHub project organization
+##  Histogram
+![Histogram](screenshots/Histogram.JPG)
 
----
+## Power BI Dashboard
+![Power BI Dashboard](screenshots/PB_Dashboard.JPG)
 
+## Author
+M. Hammad Shahbaz
+Computer Science / Software Engineering Student
+GitHub: @HammadShahbaz911
